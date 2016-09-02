@@ -14,6 +14,12 @@ group :development do
   gem 'listen'
 end
 
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end
+
+gem 'rails-controller-testing'
+
 # Use SCSS for stylesheets
  gem 'sass-rails', '~> 5.0'
  # Use Uglifier as compressor for JavaScript assets
@@ -24,3 +30,5 @@ end
  gem 'jquery-rails'
  # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
  gem 'turbolinks'
+
+ gem 'bootstrap-sass'
