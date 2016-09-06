@@ -12,10 +12,20 @@ end
 group :development do
   gem 'sqlite3'
   gem 'listen'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'shoulda'
+  gem 'faker'
+  gem 'factory_girl_rails'
+  gem 'simplecov'
 end
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
+  gem 'pry-rails'
 end
 
 gem 'rails-controller-testing'
@@ -32,3 +42,5 @@ gem 'rails-controller-testing'
  gem 'turbolinks'
 
  gem 'bootstrap-sass'
+
+ gem 'bootswatch-rails'
