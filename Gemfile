@@ -44,3 +44,5 @@ gem 'rails-controller-testing'
  gem 'bootstrap-sass'
 
  gem 'bootswatch-rails'
+
+ gem 'devise'
