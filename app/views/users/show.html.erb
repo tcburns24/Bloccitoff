@@ -2,3 +2,9 @@
 
 <div class="media-body">
   <h2 class="media-heading"><%= @user.email %></h2>
+
+<% @user.items.each do |item| %>
+  <div class="media">
+    <%= render partial: 'items/form' %>
+  </div>
+<% end %>
