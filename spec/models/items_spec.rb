@@ -6,7 +6,7 @@ RSpec.describe Item, type: :model do
   it { is_expected.to belong_to(:user) }
 
   describe "attributes" do
-    it "has a title and body" do
+    it "has a name" do
       expect(item).to have_attributes(title: item.title, body: item.body)
     end
   end

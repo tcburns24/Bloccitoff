@@ -14,13 +14,14 @@ group :development do
   gem 'listen'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'factory_girl_rails', '~> 4.0'
 end
 
 group :test do
   gem 'rspec-rails'
   gem 'shoulda'
   gem 'faker'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '~> 4.0'
   gem 'simplecov'
 end
 

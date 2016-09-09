@@ -2,11 +2,16 @@ require 'rails_helper'
 
 RSpec.describe ItemsController, type: :controller do
 
-  let(:item) { User.item.create!) }
+  let(:my_user) { User.create!(email: "user1@blocitoff.com", password: "password", password_confirmation: "password") }
+
+  before(:each) do
+    @my_user = FactoryGirl.create(:user)
+    sign_in @my_user
+  end
 
   describe "POST create" do
-    it "returns http redirect" do
-      post :create
-      expect(response).to redirect_to(new_session_path)
+    it "increases the number of Post by 1" do
+      expect{ item :create, name: my_name}.to change(Item,:count).by(1)
     end
   end
+end
