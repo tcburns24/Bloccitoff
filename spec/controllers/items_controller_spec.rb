@@ -10,7 +10,7 @@ RSpec.describe ItemsController, type: :controller do
   end
 
   describe "POST create" do
-    it "increases the number of Post by 1" do
+    it "increases the number of Items by 1" do
       expect{ item :create, name: my_name}.to change(Item,:count).by(1)
     end
   end
