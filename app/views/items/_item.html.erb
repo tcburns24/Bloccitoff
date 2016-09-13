@@ -1,8 +1,7 @@
-<%= content_tag :div, class: 'media', id: "item-#{item.id}" do %>
-  <div class="media">
-    <div class="media-body">
-      <p><%= item.name %></p>
-      <%= link_to "", item, method: :delete, class: 'glyphicon glyphicon-ok' %>
-    </div>
-  </div>
-<% end %>
+<tbody>
+  <%= content_tag :tr, class: 'info', id: "item-#{item.id}" do %>
+    <td><%= item.name %></td>
+    <td><%= link_to "", [current_user, item], method: :delete, class: 'glyphicon glyphicon-ok', remote: true %></td>
+    <!-- <td></td> -->
+  <% end %>
+</tbody>
