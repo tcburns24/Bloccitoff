@@ -7,7 +7,7 @@ RSpec.describe Item, type: :model do
 
   describe "attributes" do
     it "has a name" do
-      expect(item).to have_attributes(title: item.title, body: item.body)
+      expect(item).to have_attributes(title: item.title, name: item.name)
     end
   end
 end
