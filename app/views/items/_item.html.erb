@@ -2,6 +2,6 @@
   <%= content_tag :tr, class: 'info', id: "item-#{item.id}" do %>
     <td><%= item.name %></td>
     <td><%= link_to "", [current_user, item], method: :delete, class: 'glyphicon glyphicon-ok', remote: true %></td>
-    <!-- <td></td> -->
+    <p><%= distance_of_time_in_words(7.days - (Time.now - item.created_at)) %></p>
   <% end %>
 </tbody>
