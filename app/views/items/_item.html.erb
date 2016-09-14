@@ -1,7 +1,8 @@
 <%= content_tag :div, class: 'media', id: "item-#{item.id}" do %>
   <div class="media">
     <div class="media-body">
-      <p><%= item.name %></p>
+      <p><%= item.name %> </p>
+      <p><%= distance_of_time_in_words(7.days - (Time.now - item.created_at)) %></p>
     </div>
   </div>
 <% end %>
