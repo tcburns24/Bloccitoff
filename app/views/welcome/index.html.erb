@@ -1,2 +1,9 @@
-<h1>Welcome to Bloccitoff</h1>
-<p id="index-title">An auto-deleting to-do list to keep you on top of life!</p>
+<div class="jumbotron">
+  <h1>Welcome to Blocitoff √</h1>
+  <p id="index-title">An auto-deleting to-do list to keep you on top of life!</p>
+</div>
+
+<div class="btn-group btn-group-lg">
+  <%= link_to "Sign In", new_user_session_path, class: 'btn btn-info' %>
+  <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-success' %>
+</div>

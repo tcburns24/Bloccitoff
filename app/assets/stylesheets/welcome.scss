@@ -2,13 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 {
-  color: red;
+.abouthead {
+  color: #68dff9;
+  font-size: 42px;
+  font-style: strong;
+}
+
+.sign {
+  align-items: center;
 }
 
 #index-title {
   text-align: center;
-  font-size: 19px;
+  font-size: 23px;
   color: #9eebfa;
 }
 
